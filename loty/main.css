@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    background-color:whitesmoke;
+    color:cadetblue;
+    font-family: sans-serif;
+    font-size: 30px;
+    position: relative;
+}
+footer {
+    background-color: aliceblue;
+    color: green;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: left;
+}
+table,td,th {
+    padding: 20px;
+    font-weight: 500;
+    border: 50px;
+    border-collapse: separate;
+    text-align: left;
+}
+#pierwszy {
+    background-color: blue;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.table_box {
+    position: relative;
+    width: max-content;
+    margin: auto;
+}
+
+#okazja {
+    position: absolute;
+    z-index: -1;
+    background-color: crimson;
+    color: black;
+    top: 60px;
+    left: 10px;
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+}
+
+.city {
+    display: inline;
+}
+
+.along {
+    display: flex;
+    justify-content: space-evenly;
+}
