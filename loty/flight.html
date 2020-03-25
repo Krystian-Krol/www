@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,40 +8,119 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
+
 <body>
-    <h1>Flight LO 3711</h1>
-    <div class= "along">
-        <div class = "city">
-            <p>From: <a href = "https://pl.wikipedia.org/wiki/Warszawa">Warszawa</a></p>
-            <img src="Wwa.jpeg" alt="Warsaw photo" class = "logo">
-            <div id="cont_7d8eee74f0f7088030124658a6503baf"><script type="text/javascript" async src="https://www.theweather.com/wid_loader/7d8eee74f0f7088030124658a6503baf"></script></div>
+    <div class="along_desktop">
+        <div class="menu">
+            <ul aria-label="MENU:" style="list-style-type: none">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flight.html">LO 3711</a></li>
+                <li><a href="#passList">List of passengers</a></li>
+                <li><a href="index.html">Random page</a></li>
+                <li><a href="flight.html">Random flight</a></li>
+                <li><a href="#passList">Random list</a></li>
+                <li><a href="index.html">Abut us</a></li>
+                <li><a href="index.html">Flights list</a></li>
+            </ul>
         </div>
-        <div class = "flight_info">
-            <p>Flight duration:<br>13 hours 20 minutes</p>
-            <p>Plane: Airbus A380</p>
-            <p>Capacity: 555 passengers</p>
-            <img src="samolot.jpg" alt="Plane photo" class = "logo">
+        <div class="along_tablet">
+            <div class="middle">
+                <h1>Flight LO 3711</h1>
+                <div class="along">
+                    <div class="city">
+                        <p>From: <a href="https://pl.wikipedia.org/wiki/Warszawa">Warszawa</a></p>
+                        <div id="hide">
+                            <img src="Wwa.jpeg" alt="Warsaw photo" class="logo">
+                            <div id="cont_7d8eee74f0f7088030124658a6503baf">
+                                <script type="text/javascript" async
+                                    src="https://www.theweather.com/wid_loader/7d8eee74f0f7088030124658a6503baf"></script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight_info">
+                        <p>Flight duration:<br>13 hours 20 minutes</p>
+                        <p>Plane: Airbus A380</p>
+                        <p>Capacity: 555 passengers</p>
+                        <img src="samolot.jpg" alt="Plane photo" class="logo">
+                    </div>
+                    <div class="city">
+                        <p>To: <a href="https://pl.wikipedia.org/wiki/Hanoi">Hanoi</a></p>
+                        <div id="hide">
+                            <img src="Hanoi.jpg" alt="Hanoi photo" class="logo">
+                            <div id="cont_7919db10720975e21fa105b11bfc7aa6">
+                                <script type="text/javascript" async
+                                    src="https://www.theweather.com/wid_loader/7919db10720975e21fa105b11bfc7aa6"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2><a name="passList">List of passengers</a></h2>
+                <div style="text-align: left;">
+                    <ul>
+                        <li>Jan Kowalski</li>
+                        <li>Janina Kowalska</li>
+                        <li>Janusz Kowalski</li>
+                        <li>Joanna Kowalska</li>
+                        <li>Jan Kowal</li>
+                        <li>Janina Kowal</li>
+                        <li>Janusz Kowal</li>
+                        <li>Joanna Kowal</li>
+                        </ol>
+                        <br><br>
+                        <a href="javascript:history.back()">Go Back</a>
+                </div>
+            </div>
+            <div class="right_menu">
+                <ul aria-label="Rescheduled flights:" style="list-style-type: none">
+                    <li>
+                        <p id="canceled">LO 7311</p>
+                    </li>
+                    <li>
+                        <p id="delayed">AW 7311</p>
+                    </li>
+                    <li>
+                        <p id="delayed">LA 7311</p>
+                    </li>
+                    <li>
+                        <p id="late">LO 7111</p>
+                    </li>
+                    <li>
+                        <p id="canceled">LO 7123</p>
+                    </li>
+                    <form action="flight.html">
+
+                        <label for="from">Choose departure airport:</label><br>
+                        <select id="from" name="from">
+                            <option value="Warsaw">Warsaw</option>
+                            <option value="Hanoi">Hanoi</option>
+                        </select> <br>
+
+                        <label for="to">Choose destination:</label><br>
+                        <select id="to" name="to">
+                            <option value="Warsaw">Warsaw</option>
+                            <option value="Hanoi">Hanoi</option>
+                        </select><br>
+
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br>
+
+                        <label for="start">Date:</label>
+                        <input type="date" id="start" name="trip-start" value="2020-03-11" min="2020-03-11"
+                            max="2023-12-31"><br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                    </form>
+                </ul>
+            </div>
+
+
         </div>
-        <div class = "city">
-            <p>To: <a href = "https://pl.wikipedia.org/wiki/Hanoi">Hanoi</a></p>
-            <img src="Hanoi.jpg" alt="Hanoi photo" class = "logo">
-            <div id="cont_7919db10720975e21fa105b11bfc7aa6"><script type="text/javascript" async src="https://www.theweather.com/wid_loader/7919db10720975e21fa105b11bfc7aa6"></script></div>
-        </div>
-    </div>
-    <h2>List of passengers</h2>
-    <div style="text-align: left;">
-        <ul>Jan Kowalski</ul>
-        <ul>Janina Kowalska</ul>
-        <ul>Janusz Kowalski</ul>
-        <ul>Joanna Kowalska</ul>
-        <ul>Jan Kowal</ul>
-        <ul>Janina Kowal</ul>
-        <ul>Janusz Kowal</ul>
-        <ul>Joanna Kowal</ul>
-        <a href="javascript:history.back()">Go Back</a>
     </div>
 </body>
 <footer>
     Author: Krystian Król
 </footer>
+
 </html>

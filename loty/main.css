@@ -3,7 +3,6 @@ body {
     background-color:whitesmoke;
     color:cadetblue;
     font-family: sans-serif;
-    font-size: 30px;
     position: relative;
 }
 footer {
@@ -11,7 +10,6 @@ footer {
     color: green;
     font-family: sans-serif;
     font-size: 30px;
-    text-align: left;
 }
 table,td,th {
     padding: 20px;
@@ -43,7 +41,7 @@ table,td,th {
 }
 
 .logo {
-    max-width: 300px;
+    max-width: 20vw;
     height: auto;
 }
 
@@ -54,4 +52,67 @@ table,td,th {
 .along {
     display: flex;
     justify-content: space-evenly;
+}
+
+/*---------------------------*/
+
+@media screen and (min-width: 800px) {
+.along_desktop {
+    display: flex;
+    justify-content: space-evenly;
+}
+}
+@media screen and (min-width: 600px) {
+    .along_tablet {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    }
+
+.middle {
+    display: inline;
+}
+
+.menu {
+    display: inline;
+}
+.right_menu {
+    display: inline;
+}
+
+@media screen and (max-width: 600px) {
+    #hide {
+        display: none;
+    }
+}
+
+/* ---------- */
+ul:before {
+    content: attr(aria-label);
+    color: black;
+    font-size: auto;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: blue;
+}
+
+#canceled {
+    background-color: crimson;
+    color: black;
+}
+
+#delayed {
+    background-color: yellow;
+    color: black;
+}
+
+#late {
+    background-color: orange;
+    color: black;
 }
