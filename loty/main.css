@@ -92,7 +92,7 @@ table, td, th {
     grid-area: rmenu;
     display: grid;
     text-align: left;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto max-content;
 }
 
 @media screen and (max-width: 600px) {
@@ -169,6 +169,7 @@ a:link, a:visited {
 
 .resch_info {
     justify-self: stretch;
+    text-align: left;
 }
 
 .rescheduled_flights {
