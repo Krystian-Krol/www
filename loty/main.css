@@ -61,28 +61,38 @@ table, td, th {
 
 @media screen and (min-width: 800px) {
     .along_desktop {
-        display: flex;
+        display: grid;
         justify-content: space-evenly;
+        grid-template-columns: 200px auto;
+        grid-gap: 15px;
     }
 }
 
 @media screen and (min-width: 600px) {
     .along_tablet {
-        display: flex;
+        display: grid;
         justify-content: space-evenly;
+        grid-template-areas: 'mid mid mid rmenu';
+        grid-gap: 15px;
     }
 }
 
 .middle {
     display: inline;
+    grid-area: mid;
 }
 
 .menu {
     display: inline;
+    text-align: right;
 }
 
 .right_menu {
-    display: inline;
+    height: 100%;
+    grid-area: rmenu;
+    display: grid;
+    text-align: left;
+    grid-template-rows: auto auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -142,10 +152,47 @@ a:link, a:visited {
     position: absolute;
     z-index: 1;
 }
+
 .person:hover .seat {
     visibility: visible;
-  }
+}
 
-  .middle li:nth-child(odd) {
-      background-color: silver;
-  }
+.middle li:nth-child(odd) {
+    background-color: silver;
+}
+
+/* ------------ */
+
+.order {
+    align-self: end;
+}
+
+.resch_info {
+    justify-self: stretch;
+}
+
+.rescheduled_flights {
+    list-style-type: none;
+    justify-content: space-between;
+    display: grid;
+}
+
+.rescheduled_flights>li {
+    display: block;
+}
+
+.over {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.3;
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+
+.success {
+    color: red;
+    font-size: 80px;
+    height: 50%;
+}
