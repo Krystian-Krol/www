@@ -1,23 +1,26 @@
 body {
     text-align: center;
-    background-color:whitesmoke;
-    color:cadetblue;
+    background-color: whitesmoke;
+    color: cadetblue;
     font-family: sans-serif;
     position: relative;
 }
+
 footer {
     background-color: aliceblue;
     color: green;
     font-family: sans-serif;
     font-size: 30px;
 }
-table,td,th {
+
+table, td, th {
     padding: 20px;
     font-weight: 500;
     border: 50px;
     border-collapse: separate;
     text-align: left;
 }
+
 #pierwszy {
     background-color: blue;
     width: 70%;
@@ -57,17 +60,18 @@ table,td,th {
 /*---------------------------*/
 
 @media screen and (min-width: 800px) {
-.along_desktop {
-    display: flex;
-    justify-content: space-evenly;
+    .along_desktop {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
-}
+
 @media screen and (min-width: 600px) {
     .along_tablet {
         display: flex;
         justify-content: space-evenly;
     }
-    }
+}
 
 .middle {
     display: inline;
@@ -76,6 +80,7 @@ table,td,th {
 .menu {
     display: inline;
 }
+
 .right_menu {
     display: inline;
 }
@@ -87,6 +92,7 @@ table,td,th {
 }
 
 /* ---------- */
+
 ul:before {
     content: attr(aria-label);
     color: black;
@@ -116,3 +122,30 @@ a:link, a:visited {
     background-color: orange;
     color: black;
 }
+
+/* ------------- */
+
+.person {
+    position: relative;
+    display: inline-block;
+}
+
+.person .seat {
+    visibility: hidden;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.445);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.person:hover .seat {
+    visibility: visible;
+  }
+
+  .middle li:nth-child(odd) {
+      background-color: silver;
+  }
