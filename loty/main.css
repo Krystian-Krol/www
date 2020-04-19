@@ -30,7 +30,7 @@ table, td, th {
 
 .table_box {
     position: relative;
-    width: max-content;
+    width: auto;
     margin: auto;
 }
 
@@ -44,6 +44,7 @@ table, td, th {
 }
 
 .logo {
+    width: 100%;
     max-width: 20vw;
     height: auto;
 }
@@ -59,27 +60,24 @@ table, td, th {
 
 /*---------------------------*/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 925px) {
     .along_desktop {
         display: grid;
-        justify-content: space-evenly;
         grid-template-columns: 200px auto;
         grid-gap: 15px;
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 720px) {
     .along_tablet {
         display: grid;
-        justify-content: space-evenly;
-        grid-template-areas: 'mid mid mid rmenu';
+        grid-template-columns: 3fr 1fr;
         grid-gap: 15px;
     }
 }
 
 .middle {
     display: inline;
-    grid-area: mid;
 }
 
 .menu {
@@ -89,13 +87,11 @@ table, td, th {
 
 .right_menu {
     height: 100%;
-    grid-area: rmenu;
     display: grid;
     text-align: left;
-    grid-template-rows: auto max-content;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     #hide {
         display: none;
     }
@@ -175,11 +171,11 @@ a:link, a:visited {
 .rescheduled_flights {
     list-style-type: none;
     justify-content: space-between;
-    display: grid;
+    padding: 0;
 }
 
 .rescheduled_flights>li {
-    display: block;
+    text-align: center;
 }
 
 .over {
@@ -196,4 +192,12 @@ a:link, a:visited {
     color: red;
     font-size: 80px;
     height: 50%;
+}
+
+.people_list {
+    text-align: left;
+}
+
+.menu_style {
+    list-style-type: none;
 }

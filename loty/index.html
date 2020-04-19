@@ -10,42 +10,115 @@
 </head>
 <body>
     <h1>List of flights</h1>
-    <img src="dodo.png" alt="logo firmy" class = "logo">
-    <p id = "pierwszy">
-        FRU to polska linia lotnicza.
-    </p>
-    <p id = "pierwszy">
-        Latamy samolotami. 
-    </p>
-    <div class = "table_box">
-        <p id = "okazja">
-            Ale super lot!
-        </p>
-        <table>
-            <tr>
-                <th>Flight no.</th>
-                <th>From</th>
-                <th>To</th>
-                <th>Date</th>
-                <th>Hour</th>
-            </tr>
-            <tr>
-                <th><a href = flight.html>UAL175</a></th>
-                <th>Boston</th>
-                <th>New York</th>
-                <th>11 Sep 2001</th>
-                <th>09:03</th>
-            </tr>
-            <tr>
-                <th><a href = flight.html>N736PA</a></th>
-                <th>Las Palmas</th>
-                <th>Los Angeles</th>
-                <th>27 Mar 1977</th>
-                <th>18:07</th>
-            </tr>
-        </table>
+    <div class="along_desktop">
+        <div class="menu">
+            <ul aria-label="MENU:" class="menu_style">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flight.html">LO3711</a></li>
+                <li><a href="#passList">Pas. List</a></li>
+                <li><a href="index.html">Random Page</a></li>
+                <li><a href="flight.html">Random List</a></li>
+                <li><a href="#passList">My Seat</a></li>
+                <li><a href="index.html">About us</a></li>
+                <li><a href="index.html">Comp. Name</a></li>
+            </ul>
+        </div>
+        <div class="along_tablet">
+            <div class="middle">
+                <img src="img/dodo.png" alt="logo firmy" class = "logo">
+                <p id = "pierwszy">
+                    FRU to polska linia lotnicza.
+                </p>
+                <p id = "pierwszy">
+                    Latamy samolotami. 
+                </p>
+                <div class = "table_box">
+                    <p id = "okazja">
+                        Ale super lot!
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Flight</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Date</th>
+                            <th>Hour</th>
+                        </tr>
+                        <tr>
+                            <th><a href = flight.html>UAL175</a></th>
+                            <th>Boston</th>
+                            <th>New York</th>
+                            <th>11 Sep 2001</th>
+                            <th>09:03</th>
+                        </tr>
+                        <tr>
+                            <th><a href = flight.html>N736PA</a></th>
+                            <th>Las Palmas</th>
+                            <th>Los Angeles</th>
+                            <th>27 Mar 1977</th>
+                            <th>18:07</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="right_menu">
+                <div class="resch_info">
+                    <ul aria-label="Rescheduled flights:" class="rescheduled_flights">
+
+                        <li>
+                            <p id="canceled">LO 7311</p>
+                        </li>
+                        <li>
+                            <p id="delayed">AW 7311</p>
+                        </li>
+                        <li>
+                            <p id="delayed">LA 7311</p>
+                        </li>
+                        <li>
+                            <p id="late">LO 7111</p>
+                        </li>
+                        <li>
+                            <p id="canceled">LO 7123</p>
+                        </li>
+                        <li>
+                            <p id="late">WO 7113</p>
+                        </li>
+                        <li>
+                            <p id="canceled">WAA 7123</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order">
+                    <form action="flight.html">
+
+                        <label for="from">Choose departure airport:</label><br>
+                        <select id="from" name="from">
+                            <option value="Warsaw">Warsaw</option>
+                            <option value="Hanoi">Hanoi</option>
+                        </select> <br>
+
+                        <label for="to">Choose destination:</label><br>
+                        <select id="to" name="to">
+                            <option value="Warsaw">Warsaw</option>
+                            <option value="Hanoi">Hanoi</option>
+                        </select><br>
+
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" size=10><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" size=10><br>
+
+                        <label for="start">Date:</label>
+                        <input type="date" id="start" name="trip-start" value="2020-03-11" min="2020-03-11"
+                            max="2023-12-31"><br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </div>
-    
 </body>
 <footer>
     Author: Krystian Król

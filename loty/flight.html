@@ -12,7 +12,7 @@
 <body>
     <div class="along_desktop">
         <div class="menu">
-            <ul aria-label="MENU:" style="list-style-type: none">
+            <ul aria-label="MENU:" class = "menu_style">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="flight.html">LO3711</a></li>
                 <li><a href="#passList">Pas. List</a></li>
@@ -30,7 +30,7 @@
                     <div class="city">
                         <p>From: <a href="https://pl.wikipedia.org/wiki/Warszawa">Warszawa</a></p>
                         <div id="hide">
-                            <img src="Wwa.jpeg" alt="Warsaw photo" class="logo">
+                            <img src="img/Wwa.jpeg" alt="Warsaw photo" class="logo">
                             <div id="cont_7d8eee74f0f7088030124658a6503baf">
                                 <script type="text/javascript" async
                                     src="https://www.theweather.com/wid_loader/7d8eee74f0f7088030124658a6503baf"></script>
@@ -41,12 +41,12 @@
                         <p>Flight duration:<br>13 hours 20 minutes</p>
                         <p>Plane: Airbus A380</p>
                         <p>Capacity: 555 passengers</p>
-                        <img src="samolot.jpg" alt="Plane photo" class="logo">
+                        <img src="img/samolot.jpg" alt="Plane photo" class="logo">
                     </div>
                     <div class="city">
                         <p>To: <a href="https://pl.wikipedia.org/wiki/Hanoi">Hanoi</a></p>
                         <div id="hide">
-                            <img src="Hanoi.jpg" alt="Hanoi photo" class="logo">
+                            <img src="img/Hanoi.jpg" alt="Hanoi photo" class="logo">
                             <div id="cont_7919db10720975e21fa105b11bfc7aa6">
                                 <script type="text/javascript" async
                                     src="https://www.theweather.com/wid_loader/7919db10720975e21fa105b11bfc7aa6"></script>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <h2><a name="passList">List of passengers</a></h2>
-                <div style="text-align: left;">
+                <div class = "people_list">
                     <ul>
                         <li>
                             <div class="person">Jan Kowalski
@@ -110,7 +110,7 @@
                     </ul>
                 </div>
                 <div class="order">
-                    <form action="flight.html">
+                    <form action="flight2.html">
 
                         <label for="from">Choose departure airport:</label><br>
                         <select id="from" name="from">
@@ -125,9 +125,9 @@
                         </select><br>
 
                         <label for="fname">First name:</label><br>
-                        <input type="text" id="fname" name="fname"><br>
+                        <input type="text" id="fname" name="fname" size=10><br>
                         <label for="lname">Last name:</label><br>
-                        <input type="text" id="lname" name="lname"><br>
+                        <input type="text" id="lname" name="lname" size=10><br>
 
                         <label for="start">Date:</label>
                         <input type="date" id="start" name="trip-start" value="2020-03-11" min="2020-03-11"
