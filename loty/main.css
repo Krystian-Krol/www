@@ -182,6 +182,8 @@ a:link, a:visited {
     position: absolute;
     top: 0px;
     left: 0px;
+    font-size: 5vw;
+    color: black;
     opacity: 0.3;
     background: white;
     width: 100%;
@@ -189,9 +191,9 @@ a:link, a:visited {
 }
 
 .success {
-    color: red;
-    font-size: 80px;
-    height: 50%;
+    background-color: black;
+    color: white;
+    opacity: 1;
 }
 
 .people_list {

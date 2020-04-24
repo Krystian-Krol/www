@@ -7,6 +7,7 @@
     <title>Flight info</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='method.js'></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
                         <img src="img/samolot.jpg" alt="Plane photo" class="logo">
                     </div>
                     <div class="city">
-                        <p>To: <a href="https://pl.wikipedia.org/wiki/Hanoi">Hanoi</a></p>
+                        <p>To: <a href="https://pl.wikipedia.org/wiki/Hanoi" id ='dest'>Hanoi</a></p>
                         <div id="hide">
                             <img src="img/Hanoi.jpg" alt="Hanoi photo" class="logo">
                             <div id="cont_7919db10720975e21fa105b11bfc7aa6">
@@ -58,22 +59,22 @@
                 <div class = "people_list">
                     <ul>
                         <li>
-                            <div class="person">Jan Kowalski
+                            <div class="person" data-identyfikator-pasazera="0r32r3">Jan Kowalski
                                 <span class="seat">Seat A1</span>
                             </div>
                         </li>
                         <li>
-                            <div class="person">Janina Kowalska
+                            <div class="person" data-identyfikator-pasazera="g23fe23">Janina Kowalska
                                 <span class="seat">Seat B2</span>
                             </div>
                         </li>
                         <li>
-                            <div class="person">Janusz Kowalski
+                            <div class="person" data-identyfikator-pasazera="f23d21">Janusz Kowalski
                                 <span class="seat">Seat B1</span>
                             </div>
                         </li>
                         <li>
-                            <div class="person">Joanna Kowalska
+                            <div class="person" data-identyfikator-pasazera="d1e2e2">Joanna Kowalska
                                 <span class="seat">Seat A2</span>
                             </div>
                         </li>
@@ -82,8 +83,8 @@
                         <a href="javascript:history.back()">Go Back</a>
                 </div>
             </div>
-            <div class="right_menu">
-                <div class="resch_info">
+            <div class="right_menu" id="right_menu">
+                <div class="resch_info" id="resch_info">
                     <ul aria-label="Rescheduled flights:" class="rescheduled_flights">
 
                         <li>
@@ -110,7 +111,7 @@
                     </ul>
                 </div>
                 <div class="order">
-                    <form action="flight2.html">
+                    <form id="form">
 
                         <label for="from">Choose departure airport:</label><br>
                         <select id="from" name="from">
@@ -125,14 +126,14 @@
                         </select><br>
 
                         <label for="fname">First name:</label><br>
-                        <input type="text" id="fname" name="fname" size=10><br>
+                        <input type="text" id="fname" name="fname" size=10 value='Kowalski'><br>
                         <label for="lname">Last name:</label><br>
-                        <input type="text" id="lname" name="lname" size=10><br>
+                        <input type="text" id="lname" name="lname" size=10 value='Kowalski'><br>
 
                         <label for="start">Date:</label>
                         <input type="date" id="start" name="trip-start" value="2020-03-11" min="2020-03-11"
                             max="2023-12-31"><br>
-                        <input type="submit" value="Submit">
+                        <input id="sub" type="button" value="Submit" onclick="on_click()">
                         <input type="reset" value="Clear">
                     </form>
                 </div>
@@ -140,6 +141,8 @@
             </div>
         </div>
     </div>
+    <script src='main.js'></script>
+    <script src='flight.js'></script>
 </body>
 <footer>
     Author: Krystian Król
